@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js/jquery-3.5.1.min.js"></script>
+
+    <!-- 슬라이드 -->
+    <script src="./js/jquery-1.11.3.js"></script>
+    <script src="./js/jquery.bxslider.min.js"></script>
+    <link rel="stylesheet" href="./css/bxslider.css">
+
+    <script>
+
+        var j = $.noConflict(true); // $.noConflict(true) 를 사용해서 $ -> 변수로 선언한 j로 바꾸니 해결!
+        
+        j(document).ready(function(){ 
+        
+            var main = j('.bxslider').bxSlider({ 
+        
+            mode: 'horizontal', 
+        
+            auto: true,	//자동으로 슬라이드 
+        
+            controls : true,	//좌우 화살표	
+        
+            autoControls: true,	//stop,play 
+        
+            pager:true,	//페이징 
+        
+            pause: 3000, 
+        
+            autoDelay: 0,	
+        
+            slideWidth: 1920, 
+        
+            speed: 300, 
+        
+            stopAutoOnclick:true 
+        
+        }); 
+        
+        
+        
+        j(".bx-stop").click(function(){	// 중지버튼 눌렀을때 
+        
+            main.stopAuto(); 
+        
+            j(".bx-stop").hide(); 
+        
+            j(".bx-start").show(); 
+        
+            return false; 
+        
+        }); 
+        
+        
+        
+        j(".bx-start").click(function(){	//시작버튼 눌렀을때 
+        
+            main.startAuto(); 
+        
+            j(".bx-start").hide(); 
+        
+            j(".bx-stop").show(); 
+        
+            return false; 
+        
+        }); 
+        
+        
+        
+        j(".bx-start").hide();	//onload시 시작버튼 숨김. 
+        
+        }); 
+        
+        </script>
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;600;700&display=swap" rel="stylesheet">
+
+    <!-- 사용자 자바 -->
+    <script src="./js/main.js"></script>
+    <script src="./js/main_1.js"></script>
+
+    <!-- 사용자 CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+
+
+    <title>Cafe Drop Top</title>
+</head>
+
+
+<body>
+
+
+    <div class="main_wrap">
+    <div class="main_wrap2" style="height: 3620px;">
+
+
+        <section id="main">
+            <header id="top"><!-- changed -->
+                <div class="logo">
+                <a href="">
+                    <img src="./img/cafedroptop_jpg_logo/logo1.png" 
+                    style="width: 120px;" alt="logo">
+                </a>
+    
+                <div class="accent"> 
+                </div>
+                </div><!-- changed -->
+                
+    
+                <nav>
+                    <ul class="depth1">
+                        <li>
+                            <a href="./sub1_1.html">ABOUT</a>
+                            <ul class="sub">
+                                <li><a href="./sub1_1.html">DropTop Story</a></li>
+                                <li><a href="./sub1_2.html">What's 925?</a></li>
+                                <li><a href="./sub1_3.html">Location</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="./sub2_1.html">MENU</a>
+                            <ul class="sub">
+                                <li><a href="./sub2_1.html">New</a></li>
+                                <li><a href="">Coffee</a></li>
+                                <li><a href="">Tea & Beverage</a></li>
+                                <li><a href="">Dessert</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="">STORE</a>			
+                            <ul class="sub">
+                                <li><a href="">매장찾기</a></li>
+                            </ul>
+                        </li>
+        
+                        <li>
+                            <a href="">FRANCHISE</a>			
+                            <ul class="sub">
+                                <li><a href="">창업안내</a></li>
+                                <li><a href="">창업설명회</a></li>
+                                <li><a href="">가맹상담</a></li>
+                            </ul>
+                        </li>
+        
+                        <li>
+                            <a href="">EVENT</a>			
+                            <ul class="sub">
+                                <li><a href="">이벤트소식</a></li>
+                                <li><a href="">당첨자발표</a></li>
+                                <li><a href="">모바일쿠폰</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="">COMMUNITY</a>			
+                            <ul class="sub">
+                                <li><a href="">공지사항</a></li>
+                                <li><a href="">보도자료</a></li>
+                                <li><a href="">제작지원</a></li>
+                                <li><a href="">멀티미디어</a></li>
+                                <li><a href="">고객의소리</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>    
+            </header>
+        </section>
+
+    
+
+    
+    <div class="banner_wrap">
+        <div class="home__slider">
+            <div class="bxslider">
+                <div><img src="./banner/banner1.png" alt="그림1"></div>
+                <div><img src="./banner/banner2.png" alt="그림2"></div>
+                <div><img src="./banner/banner3.png" alt="그림3"></div>
+            </div>   
+        </div>      
+    </div>
+
+    
+    <!-- <section id="content1">
+        <div class="title">
+            <p>Cafe <span>DropTop</span> </p>
+            <h1>Best Menu</h1>
+            <p class="line"> </p>
+            <h2>늘 언제 어디서나, 드롭탑의 다양한 메뉴들을 맛보세요.</h2>
+        </div>
+
+        <div class="menu">
+            <div class="m1">
+                <img src="./img/커피/Dalgonut Coldbrew Latte.png" alt="Dalgonut">
+                <h1>달고넛 콜드브루 라떼</h1>
+                <h2>Dalgonut Coldbrew Latte</h2>
+                <button>ADD TO CART</button>
+            </div>
+
+            <div class="m2">
+                <img src="./img/차/Peach_Plum_Tea_ade.png" alt="peach">
+                <h1>피치플럼 티에이드</h1>
+                <h2>Peach Plum Tea ade</h2>
+                <button>ADD TO CART</button>
+            </div>
+
+            <div class="m3">
+                <img src="./img/디저트/Cream Scone.png" alt="scone">
+                <h1>생크림 스콘</h1>
+                <h2>Cream Scone</h2>
+                <button>ADD TO CART</button>
+            </div>
+
+            <div class="m4">
+                <img src="./img/차/Grapefruit_Black_Teaade1.png" alt="grapefruit">
+                <h1>자몽 블랙 티에이드</h1>
+                <h2>Grapefruit Black</h2>
+                <button>ADD TO CART</button>
+            </div>
+        </div>
+
+        <div class="pager2">
+            
+        </div>
+    </section> -->
+    <section id="pick">
+        <h1>Best Menu</h1>
+        <p class="line"></p>
+        <ul class="grid">
+          <li class="grid-item">
+            <a href="#">
+              <div class="grid-item-img">
+                <img src="./img/드롭치노/Mango Passion Dropccino.png" class="b1" alt="1">
+              </div>
+              <div class="grid-item-txt">
+                <p>망고 패션 드롭치노</p>
+                <p class="price">Mango Passion Dropccino</p>
+              </div>
+            </a>
+          </li>
+          <li class="grid-item">
+            <a href="#">
+              <div class="grid-item-img">
+                <img src="./img/드롭치노/Peach Plum Dropccino.png"class="b2" alt="2">
+              </div>
+              <div class="grid-item-txt">
+                <p>피치플럼 드롭치노</p>
+                <p class="price">Peach Plum Dropccino</p>
+              </div>
+            </a>
+          </li>
+          <li class="grid-item">
+            <a href="#">
+              <div class="grid-item-img">
+                <img src="./img/디저트/Choco Croquant Chou.png"class="b3" alt="3">
+              </div>
+              <div class="grid-item-txt">
+                <p>초코 크로칸 슈</p>
+                <p class="price">Choco Croquant Chou</p>
+              </div>
+            </a>
+          </li>
+          <li class="grid-item">
+            <a href="#">
+              <div class="grid-item-img">
+                <img src="./img/음료/Black Sugar Earlgrey Milk Tea.png" class="b4" alt="4">
+              </div>
+              <div class="grid-item-txt">
+                <p>블랙 슈가 얼그레이 밀크티</p>
+                <p class="price">Black Sugar Earlgrey Milk Tea</p>
+              </div>
+            </a>
+          </li>
+        </ul>
+        <ul class="grid">
+          <li class="grid-item">
+            <a href="#">
+              <div class="grid-item-img">
+                <img src="./img/차/victoria_ceylon_tea.png" class="b5" alt="5">
+              </div>
+              <div class="grid-item-txt">
+                <p>빅토리아 실론티</p>
+                <p class="price">victoria ceylon tea</p>
+              </div>
+            </a>
+          </li>
+          <li class="grid-item">
+            <a href="#">
+              <div class="grid-item-img">
+                <img src="./img/디저트/Cream Scone.png" class="b6" alt="6">
+              </div>
+              <div class="grid-item-txt">
+                <p>생크림 스콘</p>
+                <p class="price">Cream Scone</p>
+              </div>
+            </a>
+          </li>
+          <li class="grid-item">
+            <a href="#">
+              <div class="grid-item-img">
+                <img src="./img/커피/Dalgonut Coldbrew Latte.png" class="b7" alt="7">
+              </div>
+              <div class="grid-item-txt">
+                <p>달고넛 콜드브루 라떼</p>
+                <p class="price">Dalgonut Coldbrew Latte</p>
+              </div>
+            </a>
+          </li>
+          <li class="grid-item">
+            <a href="#">
+              <div class="grid-item-img">
+                <img src="./img/디저트/Strawberry Cream Cake.png" class="b8" alt="8">
+              </div>
+              <div class="grid-item-txt">
+                <p>딸기 크림 케이크</p>
+                <p class="price">Strawberry Cream Cake</p>
+              </div>
+            </a>
+          </li>
+        </ul>
+        <ul class="grid"> 
+          <li class="grid-item">
+            <a href="#">
+              <div class="grid-item-img">
+                <img src="./img/차/Grapefruit_Black_Teaade1.png" class="b9" alt="9 ">
+              </div>
+              <div class="grid-item-txt">
+                <p>자몽 블랙 티에이드 </p>
+                <p class="price">Grapefruit Black Teaade</p>
+              </div>
+            </a>
+          </li>
+          <li class="grid-item">
+            <a href="#">
+              <div class="grid-item-img">
+                <img src="./img/차/Peach_Plum_Tea_ade.png" class="b10" alt="10">
+              </div>
+              <div class="grid-item-txt">
+                <p>피치플럼 티에이드</p>
+                <p class="price">Peach Plum Tea ade</p>
+              </div>
+            </a>
+          </li>
+          <li class="grid-item">
+            <a href="#">
+              <div class="grid-item-img">
+                <img src="./img/차/rooibos_peach_tea.png" class="b11" alt="11">
+              </div>
+              <div class="grid-item-txt">
+                <p>루이보스 피치티</p>
+                <p class="price">rooibos peach tea</p>
+              </div>
+            </a>
+          </li>
+          <li class="grid-item">
+            <a href="#">
+              <div class="grid-item-img">
+                <img src="./img/디저트/Fromage Blanc Cake.png" class="b12" alt="12">
+              </div>
+              <div class="grid-item-txt">
+                <p>프로마쥬 블랑</p>
+                <p class="price">Fromage Blanc Cake</p>
+              </div>
+            </a>
+          </li>
+        </ul>
+        <div class="pager">
+          <a href="#" class="active">1</a>
+          <a href="#">2</a>
+          <a href="#">3</a>
+        </div>
+      </section>
+    
+
+
+
+    <section id="content2">
+        <div class="title">
+            <h1>F L A V O R F U L </h1>
+            <h1>S I G N A T U R E &nbsp; T E A</h1>
+            <!-- <p class="line"> </p> -->
+            <h2>지친 마음을 향기롭게 위로해 줄 드롭탑 시그니처 티</h2>
+            <input class="button" type="button" value="메뉴보기"
+                onClick="location.href='sub2_1.html'">
+        </div>
+
+
+        <div class="new">
+            <div class="n1">
+                <div class="shake-vertical">
+                    <img src="./banner/victoria_ceylon_tea.png" alt="new1">
+                </div>
+                <ul>
+                    <li>스리랑카 홍차와 딸기향의 블렌딩</li>
+                    <li>빅토리아 실론티</li>
+                </ul>
+            </div>
+
+            <div class="n2">
+                <div class="shake-vertical">
+                    <img src="./banner/victoria_ceylon_tea_latte.png" alt="new2">
+                </div>
+                <ul>
+                    <li>빅토리아 실론 티 라떼</li>
+                    <!-- <li>오라봉밀크쉐이크</li> -->
+                </ul>
+            </div>
+
+            <div class="n3">
+                <div class="shake-vertical">
+                    <img src="./banner/blooming_rouge_tea.png" alt="new3">
+                </div>
+                <ul>
+                    <li>루이보스와 상큼한 과일 블렌딩</li>
+                    <li>블루밍 루즈 티</li>
+                </ul>
+            </div>
+            <div class="n4">
+                <div class="shake-vertical">
+                    <img src="./banner/rooibos_peach_tea.png" alt="new4">
+                </div>
+                <ul>
+                    <li>루이보스 피치 티</li>
+                    <!-- <li>오라봉셔벗</li> -->
+                </ul>
+            </div>
+            <div class="n5">
+                <div class="shake-vertical">
+                    <img src="./banner/Cranberry Almond.png" alt="new5">
+                </div>
+                <ul>
+                    <li>생크림/크랜베리 아몬드 스콘</li>
+                    <!-- <li>오라봉셔벗</li> -->
+                </ul>
+            </div>
+            <div class="n6">
+                <div class="shake-vertical">
+                    <img src="./banner/Cream Scone.png" alt="new6">
+                </div>
+                <!-- <ul>
+                    <li>상큼하고 시원한</li>
+                    <li>오라봉셔벗</li>
+                </ul> -->
+            </div>
+        </div>
+    </section>
+
+
+    <section id="content3">
+        <div class="bg">
+            <img src="./img/925_3.png" alt="">
+            <!-- <div class="trans"></div> -->
+            <a href="./sub1_2.html"><button>자세히 보기</button></a>
+        </div>
+
+        <!-- <div class="title">
+            <h1>Anywhere, Anywhen. <span>Coffee Namu</span></h1>
+            <p class="line"> </p>
+            <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod <br> tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse </h2>
+            <iframe class="video" width="640" height="360" src="https://www.youtube.com/embed/LH9Fu33ukTg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div> -->
+        <div class="title">
+            <h1>What's 925?</h1>
+            <p>925번 블렌딩한 커피, 결국 커피는 블렌딩이다.</p>
+            <h2>우리나라 국민 1인당 평균 512잔의 커피를 마신다고 합니다.
+                <br>커피가 일상이 된 지금, 어떤 커피를 드시고 계신가요? 더 이상 맛 없는 커피에 인생을 낭비하지 마십시오.
+            </h2>
+            <h2>전문 Q그레이더가 925번 블렌딩 테스트를 한 걸작. 입에 닿는 순간 새로운 세계를 경험하는 커피!
+                <br>드롭탑 925 블렌드를 선사합니다.
+            </h2>
+        </div>
+    </section>
+
+
+
+    <section id="content4">
+        <div class="trans"> 
+            <div class="title">
+                <h1>Cafe <span> DropTop</span></h1>
+                <h3>Franchise</h3>
+                <p class="line"> </p>
+                <h2>체계적인 시스템으로 성공적인 창업을 도와드립니다. <br>해외에도 로열티를 내지않는 순수한 국내브랜드로 <br>품질좋고 맛있는 정직한 커피를 제공합니다. </h2>
+                <button>가맹안내</button>
+            </div>
+        </div>
+    </section>
+
+
+    <footer id="footer">
+        <div class="footer_container">
+        <ul class="footer_menu">
+            <li><a href="#"><strong>개인정보 처리방침</strong></a> </li>
+            <li><a href="#">멤버스 이용약관 </a></li>
+            <li><a href="#">가입안내</a></li>
+            <li><a href="#">이용안내</a></li>
+            <li><a href="#">고객의 소리</a></li>
+            <li><a href="#">Sitemap</a></li>
+        </ul>
+
+        <ul class="sns">
+            <li><a href="#"><img src="./img/facebook.png" alt=""></a></li>
+            <li><a href="#"><img src="./img/twitter.png" alt=""></a></li>
+            <li><a href="#"><img src="./img/instagram.png" alt=""></a></li>
+        </ul>
+        </div> <!--container end-->
+
+        <div class="footer_line"></div>
+
+        <div class="footer_container2">
+            <img class="footer_logo" src="./img/cafedroptop_jpg_logo/footer_logo1.png" style="width: 100px;" alt="footer logo">
+            
+            <p class="footer_text">서울특별시 서초구 강남대로 601 (잠원동 21-2)8층, (주)다도글로벌/카페드롭탑 &nbsp; &nbsp;TEL: (02)547-7800 <br>
+            사업자등록번호:211-88-74165&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; E-MAIL:Info@coffeenamu.co.kr <br>
+            (주)다도글로벌 대표자:임문수&nbsp;&nbsp;&nbsp; 개인정보보호책임자:이병규
+            </p>
+
+            <p class="copy">
+               Copyright @2020 cafe droptop. &copy;All right Reserved.
+            </p>  
+        </div>
+    </footer>
+    
+</div>
+</div>
+
+</body>
+</html>
+
