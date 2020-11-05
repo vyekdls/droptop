@@ -1,0 +1,174 @@
+/* 지도 */
+.map_wrap {
+    width: 100%; margin: 0 auto;
+    position: relative;
+}
+
+.map_wrap > iframe {
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* sub1_3 */
+#sub1_3content {
+    width: 1200px; height: 1050px; margin: 0 auto;
+    /* outline: 1px solid red; */
+}
+#sub1_3content > .title{
+    position: relative;
+    text-align: center;
+    margin-top: 80px;
+}
+#sub1_3content > .title h1{
+    font-size: 48px;
+    color: #7a6759;
+    margin-bottom: 20px;
+}
+#sub1_3content > .title img {
+    margin-top: 100px;
+    text-align: right;
+    margin-left: -10px;
+    /* position: absolute; */
+    /* left: -80px; */
+    /* left: 50%; 
+    transform: translateX(50%); */
+}
+
+/* 지도 설명 */
+.map_text {
+    width: 1000px; height: 240px;
+    /* outline: 1px solid red; */
+    position: absolute;
+    left: 100px;
+    top: 720px;
+}
+
+
+.map_text ul li:nth-child(2),
+.map_text ul li:nth-child(3) {
+    line-height: 30px;
+}
+
+/* 상세 정렬 */
+.map_text ul {
+    float: left;
+    width: 32%;
+}
+
+.map_text ul:nth-child(2) {
+   position: absolute;
+   left: 450px;
+}
+
+.map_text ul:nth-child(3) {
+    position: absolute;
+    left: 790px;
+}
+
+.map_text ul li:nth-child(1) {
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+    margin-bottom: 13px;
+}
+
+.map_text ul li:nth-child(1) span {
+    position: absolute;
+    top: 3px;
+    left: 32px;
+}
+
+.map_text ul:nth-child(3) li:nth-child(1) span {
+    position: absolute;
+    top: -1px;
+    left: 32px;
+}
+/* 지도 */
+.map_wrap {
+    width: 100%; margin: 0 auto;
+    position: relative;
+}
+
+.map_wrap > iframe {
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* sub1_3 */
+#sub1_3content {
+    width: 1200px; height: 1050px; margin: 0 auto;
+    /* outline: 1px solid red; */
+}
+#sub1_3content > .title{
+    position: relative;
+    text-align: center;
+    margin-top: 80px;
+}
+#sub1_3content > .title h1{
+    font-size: 48px;
+    color: #7a6759;
+    margin-bottom: 20px;
+}
+#sub1_3content > .title img {
+    margin-top: 100px;
+    text-align: right;
+    margin-left: -10px;
+    /* position: absolute; */
+    /* left: -80px; */
+    /* left: 50%; 
+    transform: translateX(50%); */
+}
+
+/* 지도 설명 */
+.map_text {
+    width: 1000px; height: 240px;
+    /* outline: 1px solid red; */
+    position: absolute;
+    left: 100px;
+    top: 720px;
+}
+
+
+.map_text ul li:nth-child(2),
+.map_text ul li:nth-child(3) {
+    line-height: 30px;
+}
+
+/* 상세 정렬 */
+.map_text ul {
+    float: left;
+    width: 32%;
+}
+
+.map_text ul:nth-child(2) {
+   position: absolute;
+   left: 450px;
+}
+
+.map_text ul:nth-child(3) {
+    position: absolute;
+    left: 790px;
+}
+
+.map_text ul li:nth-child(1) {
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+    margin-bottom: 13px;
+}
+
+.map_text ul li:nth-child(1) span {
+    position: absolute;
+    top: 3px;
+    left: 32px;
+}
+
+.map_text ul:nth-child(3) li:nth-child(1) span {
+    position: absolute;
+    top: -1px;
+    left: 32px;
+}
